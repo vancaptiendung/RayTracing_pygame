@@ -112,7 +112,8 @@ while True:
     screen.blit(player, player_coord)
     #shadow
     screen.blit(shadow, shadow_coord)
-
+    pygame.draw.rect(screen, "BLACK", (0, 0, const.HIGHTSCREEN/2 - const.LIGHT_DIS, const.WIDTHSCREEN))
+    pygame.draw.rect(screen, "BLACK", (const.HIGHTSCREEN/2 + const.LIGHT_DIS, 0, const.HIGHTSCREEN/2 - const.LIGHT_DIS, const.WIDTHSCREEN)) 
     pygame.display.update()
     
 
